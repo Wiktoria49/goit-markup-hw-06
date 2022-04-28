@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-06</title>
 
     <!-- modern-normalize link -->
     <link rel="stylesheet" href="https://cdn.tutorialjinni.com/modern-normalize/1.1.0/modern-normalize.css">
@@ -33,7 +33,7 @@
             <div class="nav">
                 <ul class="nav-list list">
                     <li class="nav-list-item"><a class="nav-list-item-link link" href="index.html">Agencja</a></li>
-                    <li class="nav-list-item"><a class="nav-list-item-link link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-list-item active"><a class="nav-list-item-link link active" href="portfolio.html">Portfolio</a></li>
                     <li class="nav-list-item"><a class="nav-list-item-link link" href="#">Kontakt</a></li>
                 </ul>
             </div>
@@ -249,6 +249,20 @@
             </li>
             </a>
         </ul>
+        </div>
+        <div class="footer-newsletter-wrapper">
+            <form class="newsletter">
+                <label class="newsletter-label">
+                    <p class="footer-newslettet-input-text">Zapisz się do newslettera</p>
+                    <input class="newsletter-email-input" type="email" name="newsletter" required placeholder="E-mail" />
+                </label>
+                <button class="newsletter-submit-button" type="submit">
+                    Zapisz się
+                    <svg class="newsletter-button-icon">
+                        <use href="./images/sprite.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </div>
 </footer>

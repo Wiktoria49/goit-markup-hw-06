@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-04</title>
+    <title>goit-markup-hw-06</title>
     <!-- modern-normalize link -->
     <link rel="stylesheet" href="https://cdn.tutorialjinni.com/modern-normalize/1.1.0/modern-normalize.css">
     <!-- endo modern-normalize link -->
@@ -392,12 +392,87 @@
                 </a>
             </ul>
         </div>
+        <div class="footer-newsletter-wrapper">
+            <form class="newsletter">
+                <label class="newsletter-label">
+                    <p class="footer-newslettet-input-text">Zapisz się do newslettera</p>
+                    <input class="newsletter-email-input" type="email" name="newsletter" required placeholder="E-mail" />
+                </label>
+                <button class="newsletter-submit-button" type="submit">
+                    Zapisz się
+                    <svg class="newsletter-button-icon">
+                        <use href="./images/sprite.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
     </div>
 </footer>
+</body>
+</html>
+<!-- =========================== MODAL WINDOW ========================= -->
+
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-            <button type="button" class="close-btn" data-modal-close></button>
+            <button type="button" class="close-btn" data-modal-close>
+            <svg>
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>    
+            </button>
+
+<!-- +++++++++++++++++++++++ FORMULARZ ++++++++++++++++++++++++++++++ -->
+<section class="form-section section">
+    <h3 class="form-header">Zostaw swoje dane w formularzu poniżej</h3>
+    <form class="form" autocomplete="off" action="javascript:void(0);" method="POST">
+
+        <label class="form-label">
+            <span class="label-span">Imię</span>
+            <input class="form-input" type="text" name="name" required minlenght="2"/>
+                <svg class="form-icon icon-name">
+                    <use href="./images/sprite.svg#icon-name"></use>
+                </svg>
+        </label>
+
+        <label class="form-label">
+            <span class="label-span">Telefon</span>
+            <input class="form-input" type="tel" name="tel"  required/>
+                <svg class="form-icon icon-tel">
+                    <use href="./images/sprite.svg#icon-tel"></use>
+                </svg>
+        </label>
+        
+        <label class="form-label">
+            <span class="label-span">E-mail</span>
+            <input class="form-input icon-mail" type="email" name="email" required/>
+                <svg class="form-icon icon-mail">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                </svg>
+        </label>
+
+        <label class="form-label">
+            <span class="label-span">Komentarz</span>
+            <textarea class="comment-textarea" type="comment" name="comment"  placeholder="Wprowadź tekst"></textarea>
+        </label>
+
+    <div class="checkbox-wrap">
+
+        <label>
+        <input type="checkbox" class="checkbox" unchecked name="terms_and_conditions" value="terms_and_conditions"/>
+        <p class=checkbox-text>Oświadczam, iż akceptuję <a class="form-link link" target="_blank" href="#">&nbsp;Regulamin&nbsp;</a>&nbsp;i&nbsp;<a class="form-link link" target="_blank" href="#">&nbsp;Politykę Prywatności.</a></p>
+        </label>
+        
     </div>
+       
+        <button class="submit-button" type="submit">wyślij</button>
+    
+    </form>
+</section>
+
+
+
+<!-- +++++++++++++++++++++++ END FORMULARZ ++++++++++++++++++++++++++++++ -->
+
+
 </div>
 
 <script src="./js/modal.js"></script>
